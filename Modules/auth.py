@@ -12,7 +12,7 @@ from googleapiclient.errors import HttpError
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
 
-def main():
+def authenticate():
     """Shows basic usage of the Gmail API.
     Lists the user's Gmail labels.
     """
@@ -56,4 +56,4 @@ for thread in threads:
 
 
 if __name__ == '__main__':
-    main()
+    authenticate()
