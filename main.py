@@ -1,9 +1,9 @@
 from Modules import auth, mail, ai, terminal, db
 
 servicioMail = auth.authenticate()
-mensajes = mail.obtenerMensajes(servicioMail)
+mails = mail.obtenerUltimosMails(10,servicioMail)
 
 #ejemplo de uso
-#mensajesComprometidos = ai.analyze(mensajes)
-#db.guardarEnBlacklist(mensajesComprometidos)
-#terminal.mostrar(mensajesComprometidos)
+#mailsComprometidos = ai.analyze(mails)
+#db.guardarEnBlacklist(mailsComprometidos)
+#terminal.mostrarMailsComprometidos(mailsComprometidos)
